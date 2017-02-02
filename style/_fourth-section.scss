@@ -3,7 +3,7 @@
 .quotations {
   background: url("../images/bg.png") 50% no-repeat;
   background-size: cover;
-  padding: 260px 0;
+  padding: 240px 0;
   color: #fff;
 
   .carousel-control-prev-icon {
@@ -41,5 +41,22 @@
 
   .carousel-indicators {
     bottom: -35px;
+  }
+
+  h2 {
+    font-size: 78px;
+    font-family: $font-bold;
+    line-height: 102px;
+  }
+
+  cite {
+    font-size: 18px;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: $font-bold;
+    line-height: 48px;
   }
 }

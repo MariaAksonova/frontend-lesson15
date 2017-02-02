@@ -12,23 +12,43 @@
         <header class="main-header">
             <div class="container">
                 <a href="">
-                    <img src="" alt="">
+                    <img src="images/atis.png" alt="" class="logo">
                     <h1></h1>
                 </a>
                 <ul class="main-nav">
-                    <li>Flights</li>
-                    <li>Hotels</li>
-                    <li>Explore</li>
-                    <li>Restaurants</li>
-                    <li>Things to do</li>
-                    <li>About Greece</li>
-                    <li>Become a host</li>
+                    <li>
+                        <a href="#">Flights</a>
+                    </li>
+                    <li>
+                        <a href="#">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#">Restaurants</a>
+                    </li>
+                    <li>
+                        <a href="#">Things to do</a>
+                    </li>
+                    <li>
+                        <a href="#">About Greece</a>
+                    </li>
+                    <li>
+                        <button type="button" class="main-btn">Become a host</button>
+                    </li>
                 </ul>
+                <div class="popup-wrap">
+                    <div class="popup">
+                        <h3>Become a host!</h3>
+                        <img src="images/close-icon.png" alt="" class="close">
+                    </div>
+                </div>
             </div>
         </header>
-        <div>
+        <div class="welcome-text">
             <h2>Greece</h2>
-            <h3>W E L C O M E     T O     H E A V E N</h3>
+            <h3>Welcome to heaven</h3>
             <button type="button">Check offer</button>
         </div>
         <div class="search">
@@ -36,31 +56,31 @@
                 <form>
                     <ul class="inputs">
                         <li>
-                            <label for="city">City</label>
+                            <label for="city" class="sprite-city sprite">City</label>
                             <input type="text" name="city" id="city">
                         </li>
                         <li>
-                            <label for="check-in">Check In</label>
+                            <label for="check-in" class="sprite-check-in sprite">Check In</label>
                             <input type="text" name="check-in" id="check-in">
                         </li>
                         <li>
-                            <label for="check-out">Check Out</label>
+                            <label for="check-out" class="sprite-check-out sprite">Check Out</label>
                             <input type="text" name="check-out" id="check-out">
                         </li>
                         <li>
-                            <label for="rooms">Rooms</label>
+                            <label for="rooms" class="sprite-rooms sprite">Rooms</label>
                             <input type="text" name="rooms" id="rooms">
                         </li>
                         <li>
-                            <label for="adults">Adults</label>
+                            <label for="adults" class="sprite-adults sprite">Adults</label>
                             <input type="text" name="adults" id="adults">
                         </li>
                         <li>
-                            <label for="children">Children</label>
+                            <label for="children" class="sprite-children sprite">Children</label>
                             <input type="text" name="children" id="children">
                         </li>
                         <li>
-                            <label for="stars">Stars</label>
+                            <label for="stars" class="sprite-stars sprite">Stars</label>
                             <input type="text" name="stars" id="stars">
                         </li>
                     </ul>
@@ -192,7 +212,7 @@
 
     </section>
     <footer>
-        <p>Atis</p>
+        <a href="#" class="atis">Atis</a>
         <p>ⓒ Copyright 2016. All rights reserved by <a href="#">symu.co</a></p>
     </footer>
     <script src="lib/jquery-2.2.4.min.js"></script>

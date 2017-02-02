@@ -10,14 +10,168 @@
 .welcome {
   height: 100vh;
   background: url("../images/bg-top.jpg") 50% no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .welcome .container {
     max-width: 1564px; }
+  .welcome .welcome-text {
+    color: #017dfb;
+    text-align: center; }
+    .welcome .welcome-text h2 {
+      font-size: 96px;
+      font-family: "MolleRegular", sans-serif; }
+    .welcome .welcome-text h3 {
+      font-size: 16px;
+      font-family: "RobotoRegularar", sans-serif;
+      text-transform: uppercase;
+      margin: 46px 0;
+      letter-spacing: 5px; }
+    .welcome .welcome-text button {
+      height: 51px;
+      width: 187px;
+      border: none;
+      border-radius: 30px;
+      background-color: #fff;
+      color: #017dfb;
+      cursor: pointer; }
+  .welcome .search {
+    height: 153px;
+    background-color: #017dfb;
+    display: flex;
+    align-items: center; }
+    .welcome .search form {
+      display: flex;
+      justify-content: space-between; }
+    .welcome .search .inputs {
+      display: flex;
+      align-items: center;
+      padding-left: 0; }
+      .welcome .search .inputs li {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column; }
+      .welcome .search .inputs input {
+        background-color: #017dfb;
+        border: none;
+        border-bottom: 1px solid #0dcfff;
+        width: 120px;
+        color: #fff;
+        font-size: 12px; }
+        .welcome .search .inputs input:first-child {
+          width: 160px; }
+      .welcome .search .inputs label {
+        color: #fff;
+        margin-bottom: 4px;
+        padding-left: 20px; }
+    .welcome .search button {
+      background: url("../images/search.png") no-repeat;
+      height: 130px;
+      width: 130px;
+      border: none;
+      cursor: pointer; }
+
+.sprite {
+  background: url(../images/inputs.png) no-repeat;
+  display: block; }
+
+.sprite-adults {
+  width: 17px;
+  height: 18px;
+  background-position: -4px -4px; }
+
+.sprite-check-in {
+  width: 18px;
+  height: 18px;
+  background-position: -29px -4px; }
+
+.sprite-check-out {
+  width: 18px;
+  height: 18px;
+  background-position: -55px -4px; }
+
+.sprite-children {
+  width: 15px;
+  height: 18px;
+  background-position: -81px -4px; }
+
+.sprite-city {
+  width: 13px;
+  height: 18px;
+  background-position: -104px -4px; }
+
+.sprite-rooms {
+  width: 18px;
+  height: 18px;
+  background-position: -125px -4px; }
+
+.sprite-stars {
+  width: 18px;
+  height: 18px;
+  background-position: -151px -4px; }
+
+.main-nav {
+  float: right; }
+  .main-nav li {
+    display: inline-block;
+    padding: 14px 19px;
+    transition: 0.2s ease-out; }
+  .main-nav a {
+    color: #697899;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "RobotoRegularar", sans-serif; }
+    .main-nav a:hover {
+      color: #017dfb; }
+  .main-nav .main-btn {
+    height: 51px;
+    width: 187px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(13, 207, 255, 0.25);
+    color: #017dfb;
+    cursor: pointer; }
+
+.main-header {
+  padding: 40px 0;
+  overflow: hidden; }
+  .main-header .logo {
+    float: left;
+    transform: translateY(35%); }
+
+.popup-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); }
+  .popup-wrap .popup {
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .popup-wrap .popup .close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      height: 20px;
+      width: 20px; }
 
 .quotations {
   background: url("../images/bg.png") 50% no-repeat;
   background-size: cover;
-  padding: 260px 0;
+  padding: 240px 0;
   color: #fff; }
   .quotations .carousel-control-prev-icon {
     background: url("../images/left-arrow.png") no-repeat;
@@ -42,9 +196,32 @@
       font-family: "MolleRegular", sans-serif; }
   .quotations .carousel-indicators {
     bottom: -35px; }
+  .quotations h2 {
+    font-size: 78px;
+    font-family: "RobotoBold", sans-serif;
+    line-height: 102px; }
+  .quotations cite {
+    font-size: 18px;
+    line-height: 48px; }
+  .quotations p {
+    font-size: 18px;
+    font-family: "RobotoBold", sans-serif;
+    line-height: 48px; }
 
 footer {
-  padding: 82px 0; }
+  padding: 80px 0;
+  text-align: center;
+  color: #bdbdbd;
+  font-family: "RobotoRegularar", sans-serif;
+  font-size: 18px; }
+  footer a {
+    color: #bdbdbd; }
+    footer a:hover {
+      color: #0dcfff;
+      text-decoration: none; }
+  footer .atis {
+    font-family: "MolleRegular", sans-serif;
+    font-size: 36px; }
 
 .grey-color {
   color: #bdbdbd; }
