@@ -1,0 +1,45 @@
+@import "variable";
+
+.quotations {
+  background: url("../images/bg.png") 50% no-repeat;
+  background-size: cover;
+  padding: 260px 0;
+  color: #fff;
+
+  .carousel-control-prev-icon {
+    background: url("../images/left-arrow.png") no-repeat;
+    height: 94px;
+    width: 48px;
+  }
+
+  .carousel-control-next-icon {
+    background: url("../images/right-arrow.png") no-repeat;
+    height: 94px;
+    width: 48px;
+  }
+
+  .carousel-indicators li {
+    height: 5px;
+    max-width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators .active {
+    background-color: $bright-blue-color;
+  }
+
+  .cite {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+
+    span {
+      font-family: $font-special;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: -35px;
+  }
+}

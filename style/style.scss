@@ -1,0 +1,25 @@
+@import "variable";
+@import "fonts";
+@import "first-section";
+@import "second-section";
+@import "third-section";
+@import "fourth-section";
+@import "footer";
+
+
+.grey-color {
+  color: $gray-color;
+}
+
+.blue-color {
+  color: $blue-color;
+}
+
+.bright-blue {
+  color: $bright-blue-color;
+
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "MolleRegular";
+  src: url("../fonts/Molle-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "RobotoRegularar";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype"); }
+.welcome {
+  height: 100vh;
+  background: url("../images/bg-top.jpg") 50% no-repeat;
+  background-size: cover; }
+  .welcome .container {
+    max-width: 1564px; }
+
+.quotations {
+  background: url("../images/bg.png") 50% no-repeat;
+  background-size: cover;
+  padding: 260px 0;
+  color: #fff; }
+  .quotations .carousel-control-prev-icon {
+    background: url("../images/left-arrow.png") no-repeat;
+    height: 94px;
+    width: 48px; }
+  .quotations .carousel-control-next-icon {
+    background: url("../images/right-arrow.png") no-repeat;
+    height: 94px;
+    width: 48px; }
+  .quotations .carousel-indicators li {
+    height: 5px;
+    max-width: 5px;
+    background-color: #fff;
+    border-radius: 50%; }
+  .quotations .carousel-indicators .active {
+    background-color: #0dcfff; }
+  .quotations .cite {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center; }
+    .quotations .cite span {
+      font-family: "MolleRegular", sans-serif; }
+  .quotations .carousel-indicators {
+    bottom: -35px; }
+
+footer {
+  padding: 82px 0; }
+
+.grey-color {
+  color: #bdbdbd; }
+
+.blue-color {
+  color: #017dfb; }
+
+.bright-blue {
+  color: #0dcfff; }
+
+li {
+  list-style: none; }
+
+/*# sourceMappingURL=style.css.map */
