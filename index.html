@@ -38,12 +38,6 @@
                         <button type="button" class="main-btn">Become a host</button>
                     </li>
                 </ul>
-                <div class="popup-wrap">
-                    <div class="popup">
-                        <h3>Become a host!</h3>
-                        <img src="images/close-icon.png" alt="" class="close">
-                    </div>
-                </div>
             </div>
         </header>
         <div class="welcome-text">
@@ -56,32 +50,32 @@
                 <form>
                     <ul class="inputs">
                         <li>
-                            <label for="city" class="sprite-city sprite">City</label>
+                            <label for="city"><span class="sprite-city sprite"></span>City</label>
                             <input type="text" name="city" id="city">
                         </li>
                         <li>
-                            <label for="check-in" class="sprite-check-in sprite">Check In</label>
-                            <input type="text" name="check-in" id="check-in">
+                            <label for="check-in"><span class="sprite-check-in sprite"></span>Check In</label>
+                            <input type="date" name="check-in" id="check-in">
                         </li>
                         <li>
-                            <label for="check-out" class="sprite-check-out sprite">Check Out</label>
-                            <input type="text" name="check-out" id="check-out">
+                            <label for="check-out"><span class="sprite-check-out sprite"></span>Check Out</label>
+                            <input type="date" name="check-out" id="check-out">
                         </li>
                         <li>
-                            <label for="rooms" class="sprite-rooms sprite">Rooms</label>
-                            <input type="text" name="rooms" id="rooms">
+                            <label for="rooms"><span class="sprite-rooms sprite"></span>Rooms</label>
+                            <input type="number" name="rooms" id="rooms">
                         </li>
                         <li>
-                            <label for="adults" class="sprite-adults sprite">Adults</label>
-                            <input type="text" name="adults" id="adults">
+                            <label for="adults"><span class="sprite-adults sprite"></span>Adults</label>
+                            <input type="number" name="adults" id="adults">
                         </li>
                         <li>
-                            <label for="children" class="sprite-children sprite">Children</label>
-                            <input type="text" name="children" id="children">
+                            <label for="children"><span class="sprite-children sprite"></span>Children</label>
+                            <input type="number" name="children" id="children">
                         </li>
                         <li>
-                            <label for="stars" class="sprite-stars sprite">Stars</label>
-                            <input type="text" name="stars" id="stars">
+                            <label for="stars"><span class="sprite-stars sprite"></span>Stars</label>
+                            <input type="number" name="stars" id="stars">
                         </li>
                     </ul>
                     <button type="submit"></button>
@@ -92,77 +86,207 @@
     <section class="popular-places">
         <h3>Most popular places</h3>
         <ul class="places">
-            <li>
-                <img src="images/photo.png" alt="">
-                <h4>Thessaloniki</h4>
+            <li class="small-photo">
+                <div>
+                    <img src="images/photo.png" alt="">
+                    <h4>Thessaloniki</h4>
+                </div>
+                <div>
+                    <img src="images/photo2.png" alt="">
+                    <h4>Halkidiki</h4>
+                </div>
             </li>
-            <li>
-                <img src="images/photo2.png" alt="">
-                <h4>Halkidiki</h4>
-            </li>
-            <li>
+            <li class="big-photo">
                 <img src="images/photo3.png" alt="">
                 <h4>Crete</h4>
             </li>
-            <li>
-                <img src="images/photo4.png" alt="">
-                <h4>Athens</h4>
+            <li class="small-photo">
+                <div>
+                    <img src="images/photo4.png" alt="">
+                    <h4>Athens</h4>
+                </div>
+                <div>
+                    <img src="images/photo5.png" alt="">
+                    <h4>Mykonos</h4>
+                </div>
             </li>
-            <li>
-                <img src="images/photo5.png" alt="">
-                <h4>Mykonos</h4>
-            </li>
-            <li>
+            <li class="mid-photo">
                 <img src="images/photo6.png" alt="">
                 <h4>Meteora</h4>
             </li>
-            <li>
+            <li class="mid-photo">
                 <img src="images/photo7.png" alt="">
                 <h4>Myrtos Beach</h4>
             </li>
         </ul>
     </section>
     <section class="popular-hotels">
-        <h3></h3>
+        <h3>Most popular hotels</h3>
         <ul class="hotels">
             <li>
                 <div class="hotel-photo">
                     <img src="" alt="">
                 </div>
                 <div class="about-photo">
-                    <p></p>
-                    <ul class="stars">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <p></p>
-                    <p></p>
+                    <div class="text-left">
+                        <p class="hotel-name">El Greco</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">225$</p>
+                        <p class="time">10 days</p>
+                    </div>
                 </div>
-                <button type="button"></button>
+                <button type="button" class="more-btn">View more</button>
             </li>
             <li>
                 <div class="hotel-photo">
                     <img src="" alt="">
                 </div>
                 <div class="about-photo">
-                    <p></p>
-                    <ul class="stars">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <p></p>
-                    <p></p>
+                    <div class="text-left">
+                        <p class="hotel-name">Panorama</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">125$</p>
+                        <p class="time">6 days</p>
+                    </div>
+                    <button type="button" class="more-btn">View more</button>
                 </div>
-                <button type="button"></button>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+                <div class="hotel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="about-photo">
+                    <div class="text-left">
+                        <p class="hotel-name">Cyprotel Corfu</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">95$</p>
+                        <p class="time">4 days</p>
+                    </div>
+                    <button type="button" class="more-btn">View more</button>
+                </div>
+            </li>
+            <li>
+                <div class="hotel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="about-photo">
+                    <div class="text-left">
+                        <p class="hotel-name">Louis Creta Princess</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">325$</p>
+                        <p class="time">7 days</p>
+                    </div>
+                    <button type="button" class="more-btn">View more</button>
+                </div>
+            </li>
+            <li>
+                <div class="hotel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="about-photo">
+                    <div class="text-left">
+                        <p class="hotel-name">El Greco</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">225$</p>
+                        <p class="time">10 days</p>
+                    </div>
+                </div>
+                <button type="button" class="more-btn">View more</button>
+            </li>
+            <li>
+                <div class="hotel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="about-photo">
+                    <div class="text-left">
+                        <p class="hotel-name">Panorama</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">125$</p>
+                        <p class="time">6 days</p>
+                    </div>
+                    <button type="button" class="more-btn">View more</button>
+                </div>
+            </li>
+            <li>
+                <div class="hotel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="about-photo">
+                    <div class="text-left">
+                        <p class="hotel-name">Cyprotel Corfu</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">95$</p>
+                        <p class="time">4 days</p>
+                    </div>
+                    <button type="button" class="more-btn">View more</button>
+                </div>
+            </li>
+            <li>
+                <div class="hotel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="about-photo">
+                    <div class="text-left">
+                        <p class="hotel-name">Louis Creta Princess</p>
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price">325$</p>
+                        <p class="time">7 days</p>
+                    </div>
+                    <button type="button" class="more-btn">View more</button>
+                </div>
+            </li>
         </ul>
+        <button type="button" class="btn">View all offers</button>
     </section>
     <section class="quotations">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -215,6 +339,12 @@
         <a href="#" class="atis">Atis</a>
         <p>ⓒ Copyright 2016. All rights reserved by <a href="#">symu.co</a></p>
     </footer>
+    <div class="popup-wrap">
+        <div class="popup">
+            <h3>Become a host!</h3>
+            <img src="images/close-icon.png" alt="" class="close">
+        </div>
+    </div>
     <script src="lib/jquery-2.2.4.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>

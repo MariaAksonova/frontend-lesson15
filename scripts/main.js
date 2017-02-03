@@ -5,7 +5,9 @@ $(function (){
     $('.close').on('click', function () {
         $('.popup-wrap').fadeOut();
     });
-    $('.popup-wrap:not(.popup)').on('click', function () {
-        $('.popup-wrap').fadeOut();
+    $('.popup-wrap').on('click', function (e) {
+        if (this === e.target) {
+            $(this).fadeOut();
+        }
     });
 });

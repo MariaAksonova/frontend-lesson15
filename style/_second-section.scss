@@ -1,0 +1,50 @@
+@import "variable";
+
+.popular-places {
+  text-align: center;
+
+  h3 {
+    color: $gray-color;
+    margin: 70px 0;
+  }
+}
+
+  .places {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+      display: inline-block;
+
+      img {
+        width: 100%;
+        margin: 10px;
+      }
+
+      h4 {
+        left: 26px;
+        bottom: 26px;
+        font-size: 36px;
+        font-family: $font-bold;
+      }
+    }
+
+    .small-photo {
+      width: 28%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .big-photo {
+      width: 42%;
+      height: auto;
+    }
+
+    .mid-photo {
+      width: 48%;
+      height: auto;
+    }
+  }

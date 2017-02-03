@@ -22,11 +22,7 @@
     }
 
     h3 {
-      font-size: 16px;
-      font-family: $font-main;
-      text-transform: uppercase;
       margin: 46px 0;
-      letter-spacing: 5px;
     }
 
     button {
@@ -77,8 +73,11 @@
 
       label {
         color: #fff;
-        margin-bottom: 4px;
-        padding-left: 20px;
+        margin-bottom: 0;
+
+        span {
+          margin-right: 20px;
+        }
       }
     }
 
@@ -94,7 +93,7 @@
 
 .sprite {
   background: url(../images/inputs.png) no-repeat;
-  display: block;
+  display: inline-block;
 }
 
 .sprite-adults {
@@ -204,6 +203,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 
     .close {
       position: absolute;
