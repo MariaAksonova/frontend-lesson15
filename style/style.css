@@ -47,7 +47,8 @@
     .welcome .search .inputs {
       display: flex;
       align-items: center;
-      padding-left: 0; }
+      padding-left: 0;
+      flex-wrap: wrap; }
       .welcome .search .inputs li {
         margin: 0 10px;
         display: flex;
@@ -170,6 +171,33 @@
       height: 20px;
       width: 20px; }
 
+.mobile-menu {
+  display: none; }
+
+@media (max-width: 738px) {
+  .mobile-menu {
+    display: block;
+    background: url("../images/menu.png") 50% no-repeat;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    float: right; }
+
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 12%;
+    right: 5px;
+    width: 224px;
+    background-color: #fff;
+    border: 1px solid #0dcfff;
+    border-radius: 10px; }
+    .main-nav li {
+      width: 100%;
+      box-sizing: border-box; }
+
+  .main-header .logo {
+    transform: translateY(0); } }
 .popular-places {
   text-align: center; }
   .popular-places h3 {
@@ -277,6 +305,11 @@
   background-color: #fff;
   cursor: pointer; }
 
+@media (max-width: 738px) {
+  .hotels li {
+    height: 380px;
+    width: 320px;
+    margin: 0 10px 80px 10px; } }
 .quotations {
   background: url("../images/bg.png") 50% no-repeat;
   background-size: cover;
@@ -317,6 +350,9 @@
     font-family: "RobotoBold", sans-serif;
     line-height: 48px; }
 
+@media (max-width: 738px) {
+  .quotations h2 {
+    font-size: 48px; } }
 footer {
   padding: 80px 0;
   text-align: center;

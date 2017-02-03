@@ -60,3 +60,11 @@
     line-height: 48px;
   }
 }
+
+@media (max-width: 738px) {
+  .quotations {
+    h2 {
+      font-size: 48px;
+    }
+  }
+}

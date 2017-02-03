@@ -92,3 +92,14 @@
   background-color: #fff;
   cursor: pointer;
 }
+
+@media (max-width: 738px) {
+  .hotels {
+
+    li {
+      height: 380px;
+      width: 320px;
+      margin: 0 10px 80px 10px;
+    }
+  }
+}

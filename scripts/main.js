@@ -10,4 +10,18 @@ $(function (){
             $(this).fadeOut();
         }
     });
+
+    var flag = true;
+    $('.mobile-menu').on('click',function () {
+        if(flag) {
+            flag = false;
+
+            $('.main-nav').slideToggle(function () {
+                flag = true;
+            });
+        }
+    });
+    $(window).on('scroll',function () {
+        $('.main-nav').hide();
+    });
 });
