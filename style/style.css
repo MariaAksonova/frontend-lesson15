@@ -23,8 +23,9 @@
     color: #017dfb;
     text-align: center; }
     .welcome .welcome-text h2 {
-      font-size: 96px;
-      font-family: "MolleRegular", sans-serif; }
+      font-size: 114px;
+      font-family: "MolleRegular", sans-serif;
+      margin-bottom: -24px; }
     .welcome .welcome-text h3 {
       margin: 46px 0; }
     .welcome .welcome-text button {
@@ -184,23 +185,30 @@
     display: inline-block; }
     .places li img {
       width: 100%;
-      margin: 10px; }
+      margin: 6px; }
     .places li h4 {
       left: 26px;
       bottom: 26px;
       font-size: 36px;
-      font-family: "RobotoBold", sans-serif; }
+      font-family: "RobotoBold", sans-serif;
+      color: #fff;
+      position: absolute;
+      margin-bottom: 0; }
   .places .small-photo {
-    width: 28%;
+    width: 26%;
     height: auto;
     display: flex;
     flex-direction: column; }
+    .places .small-photo div {
+      position: relative; }
   .places .big-photo {
-    width: 42%;
-    height: auto; }
+    width: 40%;
+    height: auto;
+    position: relative; }
   .places .mid-photo {
     width: 48%;
-    height: auto; }
+    height: auto;
+    position: relative; }
 
 .popular-hotels {
   text-align: center;

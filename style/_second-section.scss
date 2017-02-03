@@ -20,7 +20,7 @@
 
       img {
         width: 100%;
-        margin: 10px;
+        margin: 6px;
       }
 
       h4 {
@@ -28,23 +28,32 @@
         bottom: 26px;
         font-size: 36px;
         font-family: $font-bold;
+        color: #fff;
+        position: absolute;
+        margin-bottom: 0;
       }
     }
 
     .small-photo {
-      width: 28%;
+      width: 26%;
       height: auto;
       display: flex;
       flex-direction: column;
+
+      div {
+        position: relative;
+      }
     }
 
     .big-photo {
-      width: 42%;
+      width: 40%;
       height: auto;
+      position: relative;
     }
 
     .mid-photo {
       width: 48%;
       height: auto;
+      position: relative;
     }
   }
