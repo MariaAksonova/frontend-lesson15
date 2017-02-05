@@ -13,14 +13,43 @@
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+
+    .hover-block {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(1, 125, 251, .8);
+      color: #fff;
+      text-align: center;
+
+      span {
+        font-size: 12px;
+        font-family: $font-bold;
+        padding: 8px 14px;
+        border-radius: 30px;
+        border: 2px solid rgba(255, 255, 255, .4);
+        margin: 0 6px;
+      }
+
+      p {
+        font-size: 54px;
+        font-family: $font-bold;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+    }
+
 
     li {
       display: inline-block;
+      margin: 6px;
 
       img {
         width: 100%;
-        margin: 6px;
       }
 
       h4 {
@@ -40,20 +69,71 @@
       display: flex;
       flex-direction: column;
 
-      div {
+      >div {
         position: relative;
+
+        &:hover {
+          .hover-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+
+          h4 {
+            display: none;
+          }
+        }
+
+        img {
+          height: 184px;
+        }
+      }
+
+      .first-small-photo {
+        margin-bottom: 12px;
       }
     }
 
     .big-photo {
-      width: 40%;
+      width: 43%;
       height: auto;
       position: relative;
+
+      &:hover {
+        .hover-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        h4 {
+          display: none;
+        }
+      }
+
+      img {
+        height: 380px;
+      }
     }
 
     .mid-photo {
       width: 48%;
       height: auto;
       position: relative;
+
+      &:hover {
+        .hover-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        h4 {
+          display: none;
+        }
+      }
     }
   }
