@@ -222,35 +222,45 @@
 }
 
 @media (max-width: 738px) {
-
-  .mobile-menu {
-    display: block;
-    background: url("../images/menu.png") 50% no-repeat;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    float: right;
-  }
-  .main-nav {
-    display: none;
-    position: fixed;
-    top: 12%;
-    right: 5px;
-    width: 224px;
-    background-color: #fff;
-    border: 1px solid $bright-blue-color;
-    border-radius: 10px;
-
-    li {
-      width: 100%;
-      box-sizing: border-box;
+  .welcome {
+    .mobile-menu {
+      display: block;
+      background: url("../images/menu.png") 50% no-repeat;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      float: right;
     }
-  }
+    .main-nav {
+      display: none;
+      position: fixed;
+      top: 12%;
+      right: 5px;
+      width: 224px;
+      background-color: #fff;
+      border: 1px solid $bright-blue-color;
+      border-radius: 10px;
 
-  .main-header {
+      li {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
 
-    .logo {
-      transform: translateY(0);
+    .main-header {
+
+      .logo {
+        transform: translateY(0);
+      }
+    }
+
+    .search {
+      height: 220px;
+
+      button {
+        width: 162px;
+        transform: translateX(-42px);
+      }
     }
   }
 }

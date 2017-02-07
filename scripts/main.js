@@ -21,7 +21,4 @@ $(function (){
             });
         }
     });
-    $(window).on('scroll',function () {
-        $('.main-nav').hide();
-    });
 });

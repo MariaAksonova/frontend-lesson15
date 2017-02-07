@@ -175,15 +175,14 @@
   display: none; }
 
 @media (max-width: 738px) {
-  .mobile-menu {
+  .welcome .mobile-menu {
     display: block;
     background: url("../images/menu.png") 50% no-repeat;
     width: 25px;
     height: 25px;
     cursor: pointer;
     float: right; }
-
-  .main-nav {
+  .welcome .main-nav {
     display: none;
     position: fixed;
     top: 12%;
@@ -192,12 +191,16 @@
     background-color: #fff;
     border: 1px solid #0dcfff;
     border-radius: 10px; }
-    .main-nav li {
+    .welcome .main-nav li {
       width: 100%;
       box-sizing: border-box; }
-
-  .main-header .logo {
-    transform: translateY(0); } }
+  .welcome .main-header .logo {
+    transform: translateY(0); }
+  .welcome .search {
+    height: 220px; }
+    .welcome .search button {
+      width: 16px;
+      transform: translateX(-42px); } }
 .popular-places {
   text-align: center; }
   .popular-places h3 {
@@ -287,6 +290,19 @@
     .places .mid-photo:hover h4 {
       display: none; }
 
+@media (max-width: 738px) {
+  .places {
+    flex-direction: column; }
+    .places .mid-photo, .places .small-photo, .places .big-photo {
+      width: 80%; }
+      .places .mid-photo h4, .places .small-photo h4, .places .big-photo h4 {
+        font-size: 20px; }
+    .places .hover-block span {
+      font-size: 12px;
+      padding: 4px 6px; }
+    .places .hover-block p {
+      font-size: 24px;
+      margin-bottom: 4px; } }
 .popular-hotels {
   text-align: center;
   background-image: linear-gradient(to top, #f9f9f9 0%, #edeef1 20%, #edeef1 50%, #edeef1 20%, #f9f9f9 100%);
@@ -400,8 +416,15 @@
     line-height: 48px; }
 
 @media (max-width: 738px) {
-  .quotations h2 {
-    font-size: 48px; } }
+  .quotations {
+    padding: 60px 10px; }
+    .quotations h2 {
+      font-size: 38px;
+      line-height: 45px; }
+    .quotations cite {
+      line-height: 28px; }
+    .quotations p {
+      line-height: 28px; } }
 footer {
   padding: 80px 0;
   text-align: center;

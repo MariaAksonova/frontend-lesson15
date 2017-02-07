@@ -63,8 +63,20 @@
 
 @media (max-width: 738px) {
   .quotations {
+
+    padding: 60px 10px;
+
     h2 {
-      font-size: 48px;
+      font-size: 38px;
+      line-height: 45px;
+    }
+
+    cite {
+      line-height: 28px;
+    }
+
+    p {
+      line-height: 28px;
     }
   }
 }
