@@ -229,6 +229,9 @@
 
 @media (max-width: 738px) {
   .welcome {
+
+    height: 660px;
+
     .mobile-menu {
       display: block;
       background: url("../images/menu.png") 50% no-repeat;
@@ -240,7 +243,7 @@
     .main-nav {
       display: none;
       position: fixed;
-      top: 12%;
+      top: 73px;
       right: 5px;
       width: 224px;
       background-color: #fff;
@@ -250,7 +253,7 @@
       li {
         width: 100%;
         box-sizing: border-box;
-        padding: 10px 16px;
+        padding: 3px 16px;
       }
     }
 
@@ -266,7 +269,7 @@
 
       button {
         width: 162px;
-        transform: translateX(-42px);
+        transform: translateX(-18px);
       }
     }
   }
@@ -277,7 +280,7 @@
     height: 710px;
 
     .main-nav li {
-      padding: 8px 16px;
+      padding: 4px 16px;
     }
 
     .search {

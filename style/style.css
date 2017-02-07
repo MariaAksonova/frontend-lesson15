@@ -178,38 +178,40 @@
   .places .hover-block p {
     font-size: 44px; } }
 @media (max-width: 738px) {
-  .welcome .mobile-menu {
-    display: block;
-    background: url("../images/menu.png") 50% no-repeat;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    float: right; }
-  .welcome .main-nav {
-    display: none;
-    position: fixed;
-    top: 12%;
-    right: 5px;
-    width: 224px;
-    background-color: #fff;
-    border: 1px solid #0dcfff;
-    border-radius: 10px; }
-    .welcome .main-nav li {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 10px 16px; }
-  .welcome .main-header .logo {
-    transform: translateY(0); }
-  .welcome .search {
-    height: 220px; }
-    .welcome .search button {
-      width: 162px;
-      transform: translateX(-42px); } }
+  .welcome {
+    height: 660px; }
+    .welcome .mobile-menu {
+      display: block;
+      background: url("../images/menu.png") 50% no-repeat;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      float: right; }
+    .welcome .main-nav {
+      display: none;
+      position: fixed;
+      top: 73px;
+      right: 5px;
+      width: 224px;
+      background-color: #fff;
+      border: 1px solid #0dcfff;
+      border-radius: 10px; }
+      .welcome .main-nav li {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 3px 16px; }
+    .welcome .main-header .logo {
+      transform: translateY(0); }
+    .welcome .search {
+      height: 220px; }
+      .welcome .search button {
+        width: 162px;
+        transform: translateX(-18px); } }
 @media (max-width: 375px) {
   .welcome {
     height: 710px; }
     .welcome .main-nav li {
-      padding: 8px 16px; }
+      padding: 4px 16px; }
     .welcome .search {
       height: 300px; }
       .welcome .search form {
