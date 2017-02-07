@@ -143,6 +143,7 @@
   .places {
 
     flex-direction: column;
+    align-items: center;
 
     .mid-photo, .small-photo, .big-photo {
       width: 80%;
@@ -166,3 +167,4 @@
     }
   }
 }
+

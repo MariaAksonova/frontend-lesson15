@@ -85,8 +85,8 @@
 
     button {
       background: url("../images/search.png") no-repeat;
-      height: 130px;
-      width: 130px;
+      height: 70px;
+      width: 100px;
       border: none;
       cursor: pointer;
     }
@@ -221,6 +221,12 @@
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .places .hover-block p {
+    font-size: 44px;
+  }
+}
+
 @media (max-width: 738px) {
   .welcome {
     .mobile-menu {
@@ -244,6 +250,7 @@
       li {
         width: 100%;
         box-sizing: border-box;
+        padding: 10px 16px;
       }
     }
 
@@ -262,5 +269,37 @@
         transform: translateX(-42px);
       }
     }
+  }
+}
+
+@media (max-width: 375px) {
+  .welcome {
+    height: 710px;
+
+    .main-nav li {
+      padding: 8px 16px;
+    }
+
+    .search {
+      height: 300px;
+
+      form {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    .welcome-text {
+
+      h2 {
+        font-size: 92px;
+      }
+    }
+  }
+
+  .popup-wrap .popup {
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
   }
 }
